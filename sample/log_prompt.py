@@ -31,7 +31,7 @@ def log_prompt(prompt_in, model_out, category):
      is_blocked = "allowed"
 
   client = google.cloud.logging.Client()
-  logger = client.logger("genAI_promptObservability")
+  logger = client.logger("genai_prompt_observability")
 
   # Emits the data using the standard logging module
   logger.log_struct(
